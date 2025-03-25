@@ -1,0 +1,651 @@
+/* Dark Mode Styling */
+body {
+    background: #121212;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Light Mode */
+.light-mode {
+    background: white;
+    color: black;
+}
+
+/* Navigation Bar */
+nav {
+    background: #222;
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#darkModeToggle {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Home Section */
+#home {
+    padding: 50px;
+}
+
+#orderNowBtn {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background: #ffcc00;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+#orderNowBtn:hover {
+    background: #ffa500;
+    box-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00;
+}
+
+/* Image Slideshow */
+.slideshow-container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    max-width: 600px;
+}
+
+.slide {
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Popup Order Form */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: white;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    color: black;
+}
+
+.popup-content input,
+.popup-content select,
+.popup-content textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.popup-content button {
+    background: #ffcc00;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.popup-content button:hover {
+    background: #ffa500;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+/* Navigation Bar */
+nav {
+    background: #222;
+    padding: 15px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px; /* Adds space between items */
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 12px 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background: #ffcc00;
+    color: black;
+    box-shadow: 0 0 10px #ffcc00;
+}
+
+/* Dark Mode Toggle Button */
+#darkModeToggle {
+    background: #ffcc00;
+    color: black;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+#darkModeToggle:hover {
+    background: #ffa500;
+    box-shadow: 0 0 10px #ffcc00;
+}
+/* Home Section */
+#home {
+    background: #111 url('[Your Background Image URL]') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    width: 100%;
+}
+
+/* Hero Section */
+.hero {
+    margin-bottom: 30px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.highlight {
+    color: #ffcc00;
+    text-shadow: 0 0 10px rgba(255, 204, 0, 0.8);
+}
+
+/* Call-to-Action Button */
+.cta-btn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 18px;
+    background: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cta-btn:hover {
+    background: #e6b800;
+    transform: scale(1.05);
+}
+
+/* Video or Slideshow */
+.media-container {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+}
+
+video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Characteristics Section */
+.characteristics {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.char-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    width: 250px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.char-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 204, 0, 0.5);
+}
+
+/* Animated Stats */
+.stats {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.stat-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.count {
+    font-size: 40px;
+    font-weight: bold;
+    color: #ffcc00;
+    text-shadow: 0 0 10px rgba(255, 204, 0, 0.8);
+}
+
+/* Responsive Design */
+@media (max-width: 100px) {
+    .characteristics {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+#categories {
+    text-align: center;
+    padding: 50px 20px;
+    background: #1a1a1a; /* Dark mode background */
+    color: white;
+}
+
+#categories h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.category-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.category-box {
+    background: #292929;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.category-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.category-box ul {
+    list-style-type: circle;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.category-box li {
+    font-size: 1rem;
+    margin: 8px 0;
+    opacity: 0.9;
+}
+
+.category-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+/* Customization Section */
+#customization {
+    background-color: #1a1a1a; /* Dark mode background */
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* Section Title */
+#customization h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    display: inline-block;
+}
+
+#customization h2::after {
+    content: "";
+    width: 80px;
+    height: 4px;
+    background: #ff4d6d; /* Highlight color */
+    display: block;
+    margin: 10px auto;
+    border-radius: 2px;
+}
+
+/* Form Styling */
+.customization-form {
+    max-width: 600px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Labels */
+.customization-form label {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 5px;
+    text-align: left;
+}
+
+/* Input Fields */
+.customization-form input,
+.customization-form select,
+.customization-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    background: #333;
+    color: white;
+    outline: none;
+}
+
+/* Special Styling for Color Options */
+.color-options {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 10px 0;
+}
+
+.color-options input[type="radio"] {
+    display: none; /* Hide default radio buttons */
+}
+
+.color-box {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+}
+
+.color-box:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6);
+}
+
+/* Highlight the selected color */
+.color-options input[type="radio"]:checked + .color-box {
+    border: 3px solid white;
+    transform: scale(1.2);
+}
+
+/* Live Preview */
+#color-preview {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Submit Button */
+.customization-form button {
+    background: #ff4d6d;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.customization-form button:hover {
+    background: #ff2e5a;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #customization h2 {
+        font-size: 28px;
+    }
+
+    .color-box {
+        width: 30px;
+        height: 30px;
+    }
+
+    .customization-form {
+        padding: 15px;
+    }
+
+    .customization-form button {
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+}
+
+/* About Us Section */
+#about {
+    background: #111; /* Dark Mode */
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* Container for Branches & Specialties */
+.about-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* Individual Boxes for Branches & Specialties */
+.about-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    width: 350px;
+    text-align: left;
+}
+
+.about-box h3 {
+    font-size: 24px;
+    color: #ffcc00;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.about-box p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.about-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-box ul li {
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+/* Team Section */
+.team {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.team-member {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    width: 250px;
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 3px solid #ffcc00;
+}
+
+.team-member h4 {
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.team-member p {
+    font-size: 16px;
+    color: #ccc;
+}
+/* Contact Section */
+#contact {
+    background: #111; /* Dark Mode */
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    width: 100%;
+}
+
+/* Full-Width Container (Bootstrap-like style) */
+.container-fluid {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #ffcc00;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 16px;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #e6b800;
+}
+
+/* Responsive Design */
+@media (max-width: 100px) {
+    form {
+        width: 90%;
+    }
+}
